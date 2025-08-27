@@ -5,6 +5,7 @@ import logger from 'morgan';
 
 import indexRouter from './routes';
 import usersRouter from './routes/users';
+import cronService from './services/cronService';
 
 const app = express();
 
@@ -16,5 +17,8 @@ app.use(express.static(path.join(__dirname, '../public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+
+// Start cron job
+cronService.start();
 
 export default app;
