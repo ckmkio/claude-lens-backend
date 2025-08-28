@@ -4,9 +4,11 @@
   "private": true,
   "scripts": {
     "build": "tsc",
-    "start": "node dist/bin/www.js",
+    "start": "node dist/bin/www.ts",
     "dev": "ts-node-dev --respawn --transpile-only bin/www.ts",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "config": "ts-node scripts/manage-config.ts",
+    "cron": "ts-node scripts/manage-cron.ts"
   },
   "dependencies": {
     "ccusage": "^16.2.0",

@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "Bash(npm run config:*)",
+      "Bash(npm run cron:*)",
+      "Bash(npm run typecheck:*)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:ccusage.com)",
+      "Bash(ccusage blocks:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
